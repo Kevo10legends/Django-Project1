@@ -1,6 +1,9 @@
+
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -8,10 +11,24 @@
     <title>Home</title>
 </head>
 <body>
+<a href="{% url 'my_home' %}">Home</a>
+<a href="{% url 'my_about' %}">About us</a>
+<a href="{% url 'my_blog' %}">Blog</a>
+<a href="{% url 'my_contact' %}">Contact us</a>
+<a href="{% url 'my_login' %}">Log in</a>
+<a href="{% url 'my_services' %}">Offers</a>
+<a href="{% url 'my_new' %}">NEW</a>
+<a href="https://www.emobilis.ac.ke/" target="_blank">visit emobilis</a>
 
 <h2>Welcome to Django</h2>
 <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut excepturi fuga fugit maxime possimus rerum, soluta tempore temporibus. Atque cupiditate dicta ex, explicabo obcaecati possimus quo soluta tempora totam!</span><span>Ad, atque blanditiis, consequuntur cupiditate dolor dolorem earum eveniet inventore iure iusto magnam natus necessitatibus nobis nostrum perspiciatis placeat possimus praesentium quas quia reiciendis sequi ut vel veritatis vitae voluptatibus?</span><span>Aut cumque debitis et in minima molestiae nostrum officia praesentium! Debitis, eum explicabo fugit illum iusto non numquam sint. Ab atque cumque dignissimos dolore dolores exercitationem fugit mollitia numquam veritatis.</span><span>Adipisci blanditiis culpa dicta dolore enim eos, labore, quam rerum sed soluta temporibus veniam? Blanditiis commodi culpa expedita iste, nulla quidem totam. Dicta distinctio impedit maxime obcaecati repellat. Explicabo, praesentium!</span><span>Architecto consequuntur culpa dignissimos distinctio illo illum, iste pariatur repellat, saepe tenetur totam unde velit vero. Accusamus accusantium aliquid beatae cumque distinctio dolore, dolorum illum minima mollitia natus odi
     o veritatis.</span></p>
+
+<img src="{% static 'images/istockphoto-1468025006-1024x1024.jpg' %}" alt="" width="425" height="325">
+<img src="{% static 'images/ai-generated-8113890_1280.jpg '  %}" alt="" width="425" height="325"> <br><br>
+
+<a href="https://www.emobilis.ac.ke/" target="_blank">visit emobilis</a>
+
 
 </body>
 </html>

@@ -1,0 +1,29 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log in</title>
+</head>
+<body>
+
+<a href="{% url 'my_home' %}">Home</a>
+<a href="{% url 'my_about' %}">About us</a>
+<a href="{% url 'my_blog' %}">Blog</a>
+<a href="{% url 'my_contact' %}">Contact us</a>
+<a href="{% url 'my_login' %}">Log in</a>
+<a href="{% url 'my_services' %}">Offers</a>
+<a href="{% url 'my_new' %}">NEW</a>
+<a href="https://www.emobilis.ac.ke/" target="_blank">visit emobilis</a>
+
+<h1>This is the login page</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto laudantium nam nobis odio provident quasi tenetur totam, ut voluptatibus? Delectus illo maxime minus recusandae saepe sint u
+    t vel, velit.</p>
+<img src="{% static 'images/pexels-tatiana-fet-420381-1105766.jpg' %}" alt="" width="90%" height="350">
+</body>
+</html>
